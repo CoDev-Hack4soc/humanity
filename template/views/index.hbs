@@ -20,49 +20,36 @@
  
       @import url(
 'https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-        .slider{
-        font-family: Montserrat;
-        text-align: center;
-        color: #325D79;
-        font-size: 34px;
-        padding-top: 15vh;
-        overflow: hidden;
-      }
-      div .s{
-        display: inline-block;
-        overflow: hidden;
-        white-space: nowrap;
-      }
-      div .s :first-of-type{
-        animation: reveal 3s infinite;
-      }
-      div .s :last-of-type{
-        animation: reveal 3s infinite;
-      }
-      div .s :last-of-type span{
-        font-size: 33px;
-        color: #b4e1dc;
-        animation: slide 3s infinite;
-      }
-      @keyframes appear{
-        0%{opacity: 0;}
-        20%{opacity: 1;}
-        80%{opacity: 1;}
-        100%{opacity: 0;}
-      }
-      @keyframes slide{
-        0%{margin-left:-800px;}
-        20%{margin-left:-800px;}
-        35%{margin-left:0px;}
-      100%{margin-left:0px;}
-      }
-      @keyframes reveal{
-        0%{opacity: 0; width: 0px;}
-        20%{opacity: 1; width: 0px;}
-        30%{width: 655px;}
-        80%{opacity: 1;}
-        100%{opacity: 0; width: 655px;}
-      }
+        .s{
+          position:relative;
+          font-size: 2.4vw;
+          color: #9BD7D1;
+          -webkit-text-stroke: 0.1vw #383d52;
+          
+        }
+        .s span{
+          color: #325D79;
+        }
+        .s h2::before{
+          content: attr(data-text);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0%;
+          height: 100%;
+          color: #F26627;
+          -webkit-text-stroke: 0vw #blue;
+          overflow:hidden;
+          animation: animate 6s linear infinite;
+        }
+        @keyframes animate{
+          0%,10%,100%{
+            width: 0;
+          }
+          70%,90%{
+            width: 100%;
+          }
+        }
    
 </style>
   </head>
@@ -79,13 +66,13 @@
           <a href="#home">Home</a>
         </li>
         <li class="item">
-          <a href="#main">Floors</a>
-        </li>
-        <li class="item">
           <a href="#photos">Photos</a>
         </li>
         <li class="item">
-          <a href="#map">Maps</a>
+          <a href="/signup">SIGN UP</a>
+        </li>
+        <li class="item">
+          <a href="/login">LOG IN</a>
         </li>
       </ul>
     </nav>
@@ -93,10 +80,10 @@
     <div id="home">
       <section id="homeleft">
         <div class="slider">
-           <div class="s">Humanity NGO</div>
+           <div class="s"><h2 data-text="HUManity NGO">HUManity NGO</h2></div>
          <br>
       <div class="s">
-         <span>Lorem ipsum dolor sit amet.</span>
+         <span>HUMANITY UPLIFTING MANKIND!</span>
       </div>
         </div>
       </section>
@@ -135,7 +122,7 @@
       <hr />
     <footer id="foot">
       <div class="footer-content">
-        <h3>Humanity NGO</h3>
+        <h3>HUManity NGO</h3>
         <p>759, 13th main, 13, th main, 3rd Block, Rajajinagar, Bengaluru, Karnataka 560010
           <br>
           +(91)7998074332</p>

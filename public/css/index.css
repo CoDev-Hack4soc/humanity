@@ -67,6 +67,7 @@
     float: right;
     font-size: 2rem;
     font-family: "Baloo Bhai 2", cursive;
+    color: #ffff;
   }
   #navbar ul li a {
     display: block;
@@ -81,7 +82,7 @@
     display: block;
     padding: 5px 5px;
     text-decoration: none;
-    color: var(--Dgreen);
+    color: #F26627;
     background-color: var(--Lgreen);
     border-radius: 8px;
     /* margin: 10px 0px; */

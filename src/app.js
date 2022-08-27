@@ -3,6 +3,9 @@ const port = process.env.PORT || 8000;
 const app = express();
 const path = require("path");
 const hbs = require("hbs");
+const multer = require('multer');
+const uuid = require('uuid');
+const upload= multer({dest: ' uploads/'});
 
 const static_path = path.join(__dirname, "../public");
 const template_path = path.join(__dirname, "../template/views");
@@ -26,6 +29,10 @@ app.get("/vdashboard", (req, res) => {
 app.get("/sdashboard", (req, res) => {
   res.render("sdashboard");
 });
+
+app.post('/upload', upload.single('summary'),(req,res)=>{
+  return res.json({status:'OK'});
+})
 
 app.listen(port, () => {
   console.log("listening");
