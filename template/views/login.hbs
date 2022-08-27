@@ -60,19 +60,34 @@
         console.log("err");
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
+        if (email == 'keshab0121@gmail.com') {
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    window.open('/dashboard', "_self")
 
-        signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                window.open('/homepage', "_self")
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert("Please check your password or email")
+                });
+        }
+        else {
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    window.open('/homepage', "_self")
 
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                alert("Please check your password or email")
-            });
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert("Please check your password or email")
+                });
+        }
     });
 </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
