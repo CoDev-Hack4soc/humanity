@@ -21,6 +21,9 @@ app.get("/signup", (req, res) => {
 app.get("/vdashboard", (req, res) => {
   res.render("vdashboard");
 });
+app.get("/sdashboard", (req, res) => {
+  res.render("sdashboard");
+});
 
 app.listen(port, () => {
   console.log("listening");
