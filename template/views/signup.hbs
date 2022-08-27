@@ -87,7 +87,7 @@
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                window.open('/profile', "_self")
+                window.open('/login', "_self")
             })
             .catch((error) => {
                 const errorCode = error.code;
