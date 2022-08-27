@@ -88,3 +88,46 @@
   width: 30%;
   text-align: center;
 }
+
+
+.tdata1 {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tdata1 td, .tdata1 th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.tdata1 tr:nth-child(even) {
+  background-color: #325D79;
+}
+
+.tdata1 tr:nth-child(odd) {
+  background-color: #d1f1ee;
+}
+
+.tdata1 tr:nth-child(even) {
+  color: white;
+}
+
+
+#piechart{
+ margin-left: 25rem;
+}
+
+
+.fli {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+}
+.fimg {
+  height: 100px;
+  width: 100px;
+}
