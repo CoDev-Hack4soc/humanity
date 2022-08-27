@@ -29,6 +29,9 @@ app.get("/vdashboard", (req, res) => {
 app.get("/sdashboard", (req, res) => {
   res.render("sdashboard");
 });
+app.get("/vsdashboard", (req, res) => {
+  res.render("vsdashboard");
+});
 
 app.post('/upload', upload.single('summary'),(req,res)=>{
   return res.json({status:'OK'});
