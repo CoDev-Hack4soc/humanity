@@ -18,6 +18,9 @@ app.get("/login", (req, res) => {
 app.get("/signup", (req, res) => {
   res.render("signup");
 });
+app.get("/vdashboard", (req, res) => {
+  res.render("vdashboard");
+});
 
 app.listen(port, () => {
   console.log("listening");
