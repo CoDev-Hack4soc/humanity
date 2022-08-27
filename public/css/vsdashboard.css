@@ -1,0 +1,83 @@
+.nav {
+  width: 100%;
+  height: 100px;
+  background-color: #325d79;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 20px;
+  color: #ffff;
+}
+.name {
+  margin-top: 40px;
+}
+.level {
+  margin-top: 40px;
+}
+.curbook {
+  margin-top: 40px;
+}
+.tdata {
+  border-radius: 10px;
+  background-color: green;
+  height: 30px;
+  width: 100px;
+}
+.tdata2 {
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
+  background-color: rgb(152, 150, 150);
+}
+.tdata3 {
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
+  background-color: rgb(233, 113, 38);
+}
+.levelcolor {
+  margin-top: 100px;
+  margin-left: 150px;
+}
+.levelcolor1 {
+  margin-top: 100px;
+  margin-left: 150px;
+}
+.levelcolor2 {
+  margin-top: 100px;
+  margin-left: 150px;
+}
+.levelcolor3 {
+  margin-top: 100px;
+  margin-left: 150px;
+}
+.heading {
+  color: #325d79;
+}
+.ques1 {
+  margin-left: 650px;
+}
+.ques2 {
+  margin-left: 600px;
+}
+#games {
+  margin-left: 420px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+#puzz1 {
+  margin: 10px;
+  width: -100px;
+  height: -100px;
+}
+#puzz2 {
+  margin: 10px;
+  width: -100px;
+  height: -100px;
+}
+#puzz3 {
+  margin: 10px;
+  width: -100px;
+  height: -100px;
+}

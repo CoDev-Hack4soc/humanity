@@ -26,6 +26,9 @@ app.get("/vdashboard", (req, res) => {
 app.get("/sdashboard", (req, res) => {
   res.render("sdashboard");
 });
+app.get("/vsdashboard", (req, res) => {
+  res.render("vsdashboard");
+});
 
 app.listen(port, () => {
   console.log("listening");
