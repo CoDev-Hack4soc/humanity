@@ -11,10 +11,12 @@ app.set("view engine", "hbs");
 app.set("views", template_path);
 app.use(express.static(static_path));
 
+app.get("/", (req, res) => {
+  res.render("index");
+});
 app.get("/login", (req, res) => {
   res.render("login");
 });
-
 app.get("/signup", (req, res) => {
   res.render("signup");
 });
@@ -24,9 +26,8 @@ app.get("/vdashboard", (req, res) => {
 app.get("/sdashboard", (req, res) => {
   res.render("sdashboard");
 });
-
-app.get("/", (req, res) => {
-  res.render("index");
+app.get("/vsdashboard", (req, res) => {
+  res.render("vsdashboard");
 });
 
 app.listen(port, () => {

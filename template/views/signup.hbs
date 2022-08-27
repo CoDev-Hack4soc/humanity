@@ -12,6 +12,7 @@
     <div class="split-screen">
         <div class="left">
             <img src="/images/signup.png" alt="">
+            <div id="google_element"></div>
         </div>
         <div class="right" data-aos="fade-up">
 
@@ -87,7 +88,7 @@
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                window.open('/profile', "_self")
+                window.open('/login', "_self")
             })
             .catch((error) => {
                 const errorCode = error.code;
@@ -99,6 +100,12 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+<script>
+    function loadGoogleTranslate(){
+        new google.translate.TranslateElement("google_element");
+    }
 </script>
 
 </html>

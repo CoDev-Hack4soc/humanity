@@ -4,7 +4,7 @@
   "description": "Hi guys.",
   "main": "index.js",
   "scripts": {
-    "dev" : "node send_mail_with_real_account.js",
+    "dev": "node send_mail_with_real_account.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,7 @@
     "express": "^4.18.1",
     "handlebars": "^4.7.7",
     "hbs": "^4.2.0",
+    "mysql": "^2.18.1",
     "node-cron": "^3.0.2",
     "nodemailer": "^6.7.8",
     "nodemon": "^2.0.19",

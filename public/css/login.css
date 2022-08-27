@@ -30,6 +30,8 @@ a{
 }
 .left{
     height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 .left,.right{
     display: flex;
