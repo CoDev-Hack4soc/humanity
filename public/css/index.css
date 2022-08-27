@@ -463,3 +463,9 @@
     height: 5rem;
     width: 5rem;
   }
+
+
+  .n{
+    display: flex;
+    flex-direction: row;
+  }
