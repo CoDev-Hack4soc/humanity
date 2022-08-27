@@ -3,6 +3,9 @@
   width: 95vw;
   margin: 0px;
 }
+body {
+  background-color: #9bd7d1;
+}
 img {
   margin-right: 15px;
   width: 70px;
@@ -17,10 +20,10 @@ img {
   width: 95vw;
   font-size: 2rem;
 }
-#vdetails {
+/* #vdetails {
   width: 250%;
-}
-.grid-container {
+} */
+/* .grid-container {
   margin: 20px 20px;
   width: 90vw;
   height: 100px;
@@ -44,4 +47,44 @@ img {
   font-family: sans-serif;
   width: 160%;
   height: 165%;
+} */
+#col {
+  display: flex;
+  flex-direction: column;
+}
+#row1 div {
+  background-color: #fff;
+  width: 40%;
+  height: 70%;
+  padding: 10px;
+  margin-right: 90px;
+  margin-left: 50px;
+  border-radius: 12px;
+}
+#row2 div {
+  background-color: #fff;
+  width: 40%;
+  height: 70%;
+  padding: 10px;
+  margin-right: 90px;
+  margin-left: 50px;
+  border-radius: 12px;
+}
+#row1 {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+}
+#row2 {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+}
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+a :hover {
+  cursor: pointer;
 }
