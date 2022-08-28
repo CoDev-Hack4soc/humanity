@@ -12,7 +12,7 @@ nodemailer.createTestAccount((err, account) => {
 });
 
 const createTransporter = (userEtherealData) => {
-   let transporter = nodemailer.createTransport({
+  let transporter = nodemailer.createTransport({
     host: userEtherealData.smtp.host,
     port: userEtherealData.smtp.port,
     secure: userEtherealData.smtp.secure,
@@ -21,7 +21,7 @@ const createTransporter = (userEtherealData) => {
       pass: userEtherealData.pass,
     },
   });
-  structureMailOption(transporter)
+  structureMailOption(transporter);
 };
 
 const structureMailOption = (transporter) => {
@@ -30,7 +30,7 @@ const structureMailOption = (transporter) => {
     to: "dasaditi018@gmail.com",
     subject: "using nodemailer",
     text: "hello world",
-    html: `<h2>some html</h2>`,
+    html: `<h2>Content to be sent to the volunteer</h2>`,
   };
   transporter.sendMail(mailOption, (err, info) => {
     if (err) {
