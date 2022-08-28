@@ -88,3 +88,14 @@ a {
 a :hover {
   cursor: pointer;
 }
+.linkSumm{
+  margin-top: -40px;
+  margin-left: 575px;
+  height: 2rem;
+  margin-bottom: 5rem;
+  width: 29rem;
+}
+.linkSumm a{
+  font-size: 1.4rem;
+}
+
